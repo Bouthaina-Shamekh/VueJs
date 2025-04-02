@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn VueJs</title>
+</head>
+<body>
+   
+    
+       <div id="app-root">
+        <!-- <h2> My names is {{name}}</h2>
+        <h2> {{ sayHi ("Afternoon", name) }}</h2>
+        <a :href="link">Test Link</a> -->
+
+        <h2> Number is {{ number }}</h2>
+        <button v-on:click="testFunction"> clickme </button>
+        <a href="https://www.google.com" @click.prevent >Test Link</a>
+        <a href="#" @click.once="testMe()" >Test Me</a>
+        <!-- <input type="text" @keyup="printMyName()" > -->
+        <!-- <input type="text" @keydown="printMyName()" > -->
+        <!-- <input type="text" @keydown.enter="printMyName()" > -->
+        <input type="text" @keydown.alt.enter="printMyName()" >
+
+    
+       </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
