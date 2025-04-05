@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn VueJs</title>
+</head>
+<body>
+   
+    
+       <div id="app-root">
+        <h2> Number One is : {{ nemberOne }}</h2>
+        <h2> Number One X 2 : {{ numOneChange() }}</h2>
+       <button @click="nemberOne++"> Number One Change</button>
+
+
+        <h2> Number Two : {{ nemberTwo }}</h2>
+        <h2> Number Two + 10 : {{ numTwoChange() }}</h2>
+       <button @click="nemberTwo++"> Number Two Change</button>
+     
+       </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

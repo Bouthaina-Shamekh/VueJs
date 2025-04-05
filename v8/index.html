@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn VueJs</title>
+</head>
+<body>
+   
+    
+       <div id="app-root">
+     
+        <label for="textInput">{{ name }}</label>
+        <input type="text" v-model="name" name="textInput" id="textInput" />
+
+        <label for="textInput_2">{{ city }}</label>
+        <input type="text" name="textInput_2" id="textInput_2" />
+
+        <button @click="name = bou">Click</button>
+    
+       </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
