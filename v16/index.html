@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Learn VueJs</title>
+</head>
+<body>
+   
+    
+       <div id="app-root">
+        <h2 style="text-align: center;"> Product </h2>
+        {{ name }}
+     <div class="container">
+        <div class="card" v-for="item in products" :key="item.id">
+            <img :src="item.images" alt="">
+            <h2 class="title">{{item.title}}</h2>
+            <p class="description">{{item.desecription}}</p>
+            <p class="price"> {{item.price}} $</p>
+            <!-- <span class="color" v-for="color in item.colors" :style="'background: ' + color">{{color}}</span> -->
+
+            <span class="color" v-for="color in item.colors" :style="{ backgroundColor: color }"></span>
+
+        </div> 
+       </div>
+
+       <h2>{{ age }} </h2>
+       
+    </div>
+    <hr>
+    
+
+    <div id="app-root-2" class="students">
+        <h2 style="text-align: center;"> students </h2>
+        {{ name }}
+
+        <button @click="increaseAge">increase age</button>
+
+
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
